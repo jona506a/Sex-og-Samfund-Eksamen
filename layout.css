@@ -559,7 +559,7 @@ svg {
     z-index: 3;
     width: 45vw;
     height: 30vw;
-    background-image: url(image/uartig-sprite_med_tekst_uartigbilleder_spritesheet.svg);
+    background-image: url(image/uartig-sprite_med_tekst.svg);
     background-size: 200% 900%;
     position: absolute;
     top: 29%;
@@ -572,7 +572,7 @@ svg {
     z-index: 3;
     width: 45vw;
     height: 30vw;
-    background-image: url(image/artig-sprite_med_tekst_ARTIGE-SPRITE.svg);
+    background-image: url(image/artig-sprite_med_tekst.svg);
     background-size: 200%;
     position: absolute;
     top: 29%;

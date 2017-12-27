@@ -39,7 +39,7 @@ function startSpm() {
     $("#billede_container").removeClass();
     $("#passende_sprite").addClass("billed_postn");
     $("#upassende_sprite").addClass("billed_postn");
-    if (niveau1_klik == 40) { /* Dette stopper spillet og sende en til payoff, når der er klikket 40 gange.*/
+    if (niveau1_klik == 35) { /* Dette stopper spillet og sende en til payoff, når der er klikket 40 gange.*/
         console.log("Spillet er Slut!");
         spil_slut_random();
 
@@ -173,6 +173,7 @@ function del_klik() {
        eller upassende */
     {
         console.log("passende delt");
+        $("#success").removeClass();
         $("#success")[0].play();
         pickle_score++;
         /* Billedets animationer */
@@ -205,7 +206,8 @@ function del_ikke_klik() {
 
     if (er_den_passende == true) {
         console.log("passende ikke delt");
-
+        $("#success").removeClass();
+        $("#success")[0].play();
         $("#passende_sprite").removeClass("billed_postn");
         $("#passende_sprite").addClass("out_right");
         console.log("out_right");
@@ -223,6 +225,7 @@ function del_ikke_klik() {
     styr_mr_pickle();
     setTimeout(startSpm, 500);
     knapperOff();
+
 
 }
 
