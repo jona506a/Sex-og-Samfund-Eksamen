@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="330.3" height="116.09" viewBox="0 0 330.3 116.09">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 48px;
+        fill: #fff;
+        font-family: FuturaPT-Demi, Futura PT;
+      }
+
+      .cls-2 {
+        letter-spacing: -0.02em;
+      }
+
+      .cls-3 {
+        fill: #f4912d;
+      }
+
+      .cls-4 {
+        letter-spacing: 0.03em;
+      }
+
+      .cls-5 {
+        letter-spacing: -0.01em;
+      }
+    </style>
+  </defs>
+  <title>Asset 2</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="chat">
+      <text class="cls-1" transform="translate(0 40.01)">Chat med <tspan class="cls-2" x="207.64" y="0">o</tspan><tspan x="233.9" y="0">s</tspan><tspan class="cls-3"><tspan x="0" y="57.6">Sta</tspan><tspan class="cls-4" x="65.95" y="57.6">r</tspan><tspan x="84.72" y="57.6">t chat </tspan><tspan class="cls-5" x="206.06" y="57.6">h</tspan><tspan x="231.16" y="57.6">er</tspan></tspan></text>
+    </g>
+  </g>
+</svg>

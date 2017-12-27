@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="365.37" height="131.38" viewBox="0 0 365.37 131.38">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 48px;
+        fill: #fff;
+        font-family: FuturaPT-Demi, Futura PT;
+      }
+
+      .cls-2 {
+        letter-spacing: -0.02em;
+      }
+
+      .cls-3 {
+        fill: #f4912d;
+      }
+
+      .cls-4 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-5 {
+        letter-spacing: -0.02em;
+      }
+    </style>
+  </defs>
+  <title>payoff_blevkasse</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="brevkasse">
+      <text class="cls-1" transform="translate(0 40.01)">Skriv til <tspan class="cls-2" x="161.28" y="0">o</tspan><tspan x="187.53" y="0">s</tspan><tspan class="cls-3"><tspan x="0" y="57.6">Gå til b</tspan><tspan class="cls-2" x="149.56" y="57.6">r</tspan><tspan class="cls-4" x="165.84" y="57.6">e</tspan><tspan x="190.41" y="57.6">vka</tspan><tspan class="cls-5" x="266.54" y="57.6">s</tspan><tspan x="284.97" y="57.6">sen</tspan></tspan></text>
+    </g>
+  </g>
+</svg>

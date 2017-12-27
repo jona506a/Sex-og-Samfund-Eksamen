@@ -1,0 +1,1162 @@
+/* -----------GENERALT START----------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "futura-pt", sans-serif;
+    /*font-size: 16px;*/
+    font: 16em 'Open Sans', sans-serif;
+}
+
+/* -----------PRELOAD START----------- */
+
+#preload {
+    display: none;
+}
+
+/* -----------PRELOAD SLUT----------- */
+
+/* -----------TYPOGRAFI----------- */
+
+h1 {
+    font-family: "futura-pt", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+}
+
+h2 {
+    font-family: "futura-pt", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+p {
+    font-family: "futura-pt", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* -----------SCENE----------- */
+
+#scene {
+    width: 100vw;
+    height: 56.25vw;
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+/* -----------GENERALT SLUT----------- */
+
+/* -----------LEVELS ANI----------- */
+
+.stroke {
+    stroke: #f4912d;
+    stroke-width: 5px;
+    stroke-dasharray: 0 250;
+    stroke-opacity: 1;
+    fill: none;
+    animation: stroke_offset 4s;
+    animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+@keyframes stroke_offset {
+    25% {
+        stroke-dasharray: 0 250;
+        stroke-opacity: 1;
+    }
+    50% {
+        stroke-dasharray: 250 0;
+        stroke-opacity: .75;
+    }
+    55% {
+        stroke-dasharray: 250 0;
+        stroke-opacity: 0;
+    }
+    70% {
+        stroke-dasharray: 250 0;
+        stroke-opacity: 0;
+    }
+    75% {
+        stroke-dasharray: 250 0;
+        stroke-opacity: .75;
+    }
+    100% {
+        stroke-dasharray: 0 250;
+        stroke-opacity: 1;
+    }
+}
+
+.fill {
+    fill: #007df3;
+    fill-opacity: 0;
+    animation: fill_offset 4s;
+    animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+@keyframes fill_offset {
+    25% {
+        fill-opacity: 0;
+    }
+    35% {
+        fill-opacity: 0;
+    }
+    50% {
+        fill-opacity: 1;
+    }
+    70% {
+        fill-opacity: 1;
+    }
+    90% {
+        fill-opacity: 0;
+    }
+    100% {
+        fill-opacity: 0;
+    }
+}
+
+
+#fade-text {
+    font-family: 'Open Sans', "futura-pt", Helvetica, Arial, sans-serif;
+    font-size: .5em;
+}
+
+.invisible {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+}
+
+#fade-text_level2 {
+    font-family: 'Open Sans', "futura-pt", Helvetica, Arial, sans-serif;
+    font-size: .5em;
+}
+
+#fade-text_level3 {
+    font-family: 'Open Sans', "futura-pt", Helvetica, Arial, sans-serif;
+    font-size: .5em;
+}
+
+#fade-text_level4 {
+    font-family: 'Open Sans', "futura-pt", Helvetica, Arial, sans-serif;
+    font-size: .5em;
+}
+
+#fade-text_level5 {
+    font-family: 'Open Sans', "futura-pt", Helvetica, Arial, sans-serif;
+    font-size: .5em;
+}
+
+svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+/* -----------START SCENE START----------- */
+
+#start_scene {
+    z-index: 1;
+    width: 100vw;
+    height: 56.25vw;
+    background-image: url(image/intro_scene_Artboard_1.png);
+    background-size: 100%;
+    position: absolute;
+}
+
+#start_knap {
+    z-index: 1;
+    width: 30vw;
+    height: 7.3vw;
+    background-image: url(image/start_knap.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 78%;
+    left: 65%;
+}
+
+#del_tekst {
+    font-size: 3.8vw;
+    position: absolute;
+    top: 42.9vw;
+    left: 15vw;
+    transform: rotate(-5deg);
+}
+
+#del_ikke_tekst {
+    font-size: 2.9vw;
+    position: absolute;
+    top: 43.3vw;
+    left: 27.4vw;
+    transform: rotate(-5deg);
+}
+
+/* -----------START SCENE SLUT----------- */
+
+/* -----------BACKGROUND START----------- */
+
+#background {
+    z-index: 1;
+    width: 100vw;
+    height: 56.25vw;
+    background-image: url(image/baggrund.svg);
+    background-size: 100%;
+    position: absolute;
+}
+
+/* -----------BACKGROUND SLUT----------- */
+
+/* -----------MELLEMGRUND START----------- */
+
+#mellemgrund {
+    z-index: 2;
+    width: 100vw;
+    height: 56.25vw;
+    background-image: url(image/mellemgrund.svg);
+    background-size: 100%;
+    position: absolute;
+}
+
+/* -----------MELLEMGRUND SLUT----------- */
+
+/* -----------FORGRUND START----------- */
+
+#forgrund {
+    z-index: 3;
+    width: 100vw;
+    height: 56.25vw;
+    background-image: url(image/forgrund.svg);
+    background-size: 100%;
+    position: absolute;
+}
+
+/* -----------FORGRUND SLUT----------- */
+
+/* -----------KNAPPER START----------- */
+
+#knap_del {
+    z-index: 3;
+    width: 27vw;
+    height: 10vw;
+    background-image: url(image/del.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 82%;
+    left: 25%;
+    cursor: pointer;
+}
+
+#knap_del_ikke {
+    z-index: 3;
+    width: 27vw;
+    height: 10vw;
+    background-image: url(image/del_ikke.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 82%;
+    left: 51%;
+    cursor: pointer;
+}
+
+/* -----------PAYOFF SCALE----------- */
+
+#payoff_container {
+    position: absolute;
+}
+
+#replay_knap {
+    z-index: 7;
+    background-image: url(image/payoff_prov_igen.svg);
+    background-size: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 35vw;
+    height: 8vw;
+    left: 60vw;
+    top: 43vw;
+    cursor: pointer;
+
+}
+
+#payoff1 {
+    z-index: 6;
+    background-image: url(image/payoff1_1.svg);
+    background-size: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 56.25vw;
+}
+
+
+/*.pay1 {
+    z-index: 7;
+    animation-name: pay1;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes pay1 {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(2.5);
+    }
+}*/
+
+#payoff2 {
+    z-index: 6;
+    background-image: url(image/payoff2_1.svg);
+    background-size: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 56.25vw;
+}
+
+#mrpickle_spritepayoff2 {
+    z-index: 7;
+    width: 10vw;
+    height: 20vw;
+    background-image: url(image/charlie_sprite.svg);
+    background-size: 200%;
+    position: absolute;
+    top: 8vw;
+    left: 45vw;
+}
+
+.mrpickle_kf {
+    z-index: 7;
+    animation-name: mrpickle_happy7;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes mrpickle_happy7 {
+    0% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 200% 100%;
+    }
+
+}
+
+
+/* -----------BILLEDE CONTAINER START----------- */
+
+#billede_container {
+    position: absolute;
+    top: 29%;
+    left: 29%;
+}
+
+.billed_postn {
+    top: 29%;
+    left: 29%;
+}
+
+/***** BTNS TRIGGER ANI ****/
+
+.out_left {
+    animation: out_kf;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+    z-index: 4;
+}
+
+@keyframes out_kf {
+    0% {
+        top: 29%;
+        left: 29%;
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: translate(-170%, -20%);
+    }
+}
+
+.out_right {
+    animation: out_right_kf;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+    z-index: 4;
+}
+
+@keyframes out_right_kf {
+    0% {
+        top: 29%;
+        left: 29%;
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: translate(170%, -20%);
+    }
+}
+
+
+/* -----------BILLEDE CONTAINER SLUT----------- */
+
+/* -----------MR PICKLE START----------- */
+
+#mrpickle_sprite {
+    z-index: 3;
+    width: 10vw;
+    height: 20vw;
+    background-image: url(image/charlie_sprite.svg);
+    background-size: 200%;
+    position: absolute;
+    top: 63%;
+    left: 5%
+}
+
+/* -----------MR PICKLE SLUT----------- */
+
+/*--------- mr pickle sprite -------------*/
+
+.mrpickle_happy1 {
+
+    animation-name: mrpickle_happy1;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes mrpickle_happy1 {
+    0% {
+        background-position: 0 0%;
+    }
+    100% {
+        background-position: 200% 0%;
+    }
+
+}
+
+.mrpickle_happy2 {
+
+    animation-name: mrpickle_happy2;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes mrpickle_happy2 {
+    0% {
+        background-position: 0% 17%;
+    }
+    100% {
+        background-position: 200% 17%;
+    }
+
+}
+
+.mrpickle_happy3 {
+
+    animation-name: mrpickle_happy3;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes mrpickle_happy3 {
+    0% {
+        background-position: 0% 33%;
+    }
+    100% {
+        background-position: 200% 33%;
+    }
+
+}
+
+.mrpickle_happy4 {
+
+    animation-name: mrpickle_happy4;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes mrpickle_happy4 {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+
+}
+
+.mrpickle_happy5 {
+
+    animation-name: mrpickle_happy5;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes mrpickle_happy5 {
+    0% {
+        background-position: 0% 67%;
+    }
+    100% {
+        background-position: 200% 67%;
+    }
+
+}
+
+.mrpickle_happy6 {
+
+    animation-name: mrpickle_happy6;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes mrpickle_happy6 {
+    0% {
+        background-position: 0% 84%;
+    }
+    100% {
+        background-position: 200% 84%;
+    }
+
+}
+
+.mrpickle_happy7 {
+
+    animation-name: mrpickle_happy7;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes mrpickle_happy7 {
+    0% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 200% 100%;
+    }
+
+}
+
+/* -----------ARTIG BILLEDER START----------- */
+
+#upassende_sprite {
+    z-index: 3;
+    width: 45vw;
+    height: 30vw;
+    background-image: url(image/uartig-sprite_med_tekst_uartigbilleder_spritesheet.svg);
+    background-size: 200% 900%;
+    position: absolute;
+    top: 29%;
+    left: 29%;
+    border: solid 1px #A9A9A9;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+#passende_sprite {
+    z-index: 3;
+    width: 45vw;
+    height: 30vw;
+    background-image: url(image/artig-sprite_med_tekst_ARTIGE-SPRITE.svg);
+    background-size: 200%;
+    position: absolute;
+    top: 29%;
+    left: 29%;
+    border: solid 1px #A9A9A9;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* -----------ARTIG BILLEDER SLUT----------- */
+
+/* ___________ BILLEDE POSITIONS KLASSIFIKATIONER START -----------*/
+
+/* PASSENDE */
+
+.p_billede_1 {
+
+    animation-name: p_billede_1;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes p_billede_1 {
+    0% {
+        background-position: 0 0%;
+    }
+    100% {
+        background-position: 0 0%;
+    }
+
+}
+
+.p_billede_2 {
+
+    animation-name: p_billede_2;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes p_billede_2 {
+    0% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+
+}
+
+
+.p_billede_3 {
+
+    animation-name: p_billede_3;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes p_billede_3 {
+    0% {
+        background-position: 0 12.5%;
+    }
+    100% {
+        background-position: 0 0%;
+    }
+
+}
+
+.p_billede_4 {
+
+    animation-name: p_billede_4;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes p_billede_4 {
+    0% {
+        background-position: 100% 12.5%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+
+}
+
+.p_billede_5 {
+
+    animation-name: p_billede_5;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes p_billede_5 {
+    0% {
+        background-position: 0% 25%;
+    }
+    100% {
+        background-position: 0% 25%;
+    }
+
+}
+
+
+.p_billede_6 {
+
+    animation-name: p_billede_6;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes p_billede_6 {
+    0% {
+        background-position: 100% 25%;
+    }
+    100% {
+        background-position: 100% 25%;
+    }
+
+}
+
+.p_billede_7 {
+
+    animation-name: p_billede_7;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes p_billede_7 {
+    0% {
+        background-position: 0% 37.5%;
+    }
+    100% {
+        background-position: 0% 37.5%;
+    }
+
+}
+
+
+.p_billede_8 {
+
+    animation-name: p_billede_8;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes p_billede_8 {
+    0% {
+        background-position: 100% 37.5%;
+    }
+    100% {
+        background-position: 100% 37.5%;
+    }
+
+}
+
+
+
+/* UPASSENDE */
+
+.u_billede_1 {
+
+    animation-name: u_billede_1;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes u_billede_1 {
+    0% {
+        background-position: 0 0%;
+    }
+    100% {
+        background-position: 0 0%;
+    }
+
+}
+
+.u_billede_2 {
+
+    animation-name: u_billede_2;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes u_billede_2 {
+    0% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+
+}
+
+
+.u_billede_3 {
+
+    animation-name: u_billede_3;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes u_billede_3 {
+    0% {
+        background-position: 0 12.5%;
+    }
+    100% {
+        background-position: 0 0%;
+    }
+
+}
+
+.u_billede_4 {
+
+    animation-name: u_billede_4;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes u_billede_4 {
+    0% {
+        background-position: 100% 12.5%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+
+}
+
+.u_billede_5 {
+
+    animation-name: u_billede_5;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes u_billede_5 {
+    0% {
+        background-position: 0% 25%;
+    }
+    100% {
+        background-position: 0% 25%;
+    }
+
+}
+
+
+.u_billede_6 {
+
+    animation-name: u_billede_6;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes u_billede_6 {
+    0% {
+        background-position: 100% 25%;
+    }
+    100% {
+        background-position: 100% 25%;
+    }
+
+}
+
+.u_billede_7 {
+
+    animation-name: u_billede_7;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes u_billede_7 {
+    0% {
+        background-position: 0% 37.5%;
+    }
+    100% {
+        background-position: 0% 37.5%;
+    }
+
+}
+
+
+.u_billede_8 {
+
+    animation-name: u_billede_8;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes u_billede_8 {
+    0% {
+        background-position: 100% 37.5%;
+    }
+    100% {
+        background-position: 100% 37.5%;
+    }
+
+}
+
+
+.u_billede_9 {
+
+    animation-name: u_billede_9;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes u_billede_9 {
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+
+}
+
+.u_billede_10 {
+
+    animation-name: u_billede_10;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes u_billede_10 {
+    0% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+
+}
+
+.u_billede_11 {
+
+    animation-name: u_billede_11;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes u_billede_11 {
+    0% {
+        background-position: 0% 62.5%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+
+}
+
+.u_billede_12 {
+
+    animation-name: u_billede_12;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes u_billede_12 {
+    0% {
+        background-position: 100% 62.5%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+
+}
+
+.u_billede_13 {
+
+    animation-name: u_billede_13;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes u_billede_13 {
+    0% {
+        background-position: 0% 75%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.u_billede_14 {
+
+    animation-name: u_billede_14;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes u_billede_14 {
+    0% {
+        background-position: 100% 75%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.u_billede_15 {
+
+    animation-name: u_billede_15;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes u_billede_15 {
+    0% {
+        background-position: 0 87.5%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.u_billede_16 {
+
+    animation-name: u_billede_16;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes u_billede_16 {
+    0% {
+        background-position: 100% 87.5%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.u_billede_17 {
+
+    animation-name: u_billede_17;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes u_billede_17 {
+    0% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.u_billede_18 {
+
+    animation-name: u_billede_18;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes u_billede_18 {
+    0% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+
+/* ___________ BILLEDE POSITIONS KLASSIFIKATIONER SLUT -----------*/
+
+/* ___________ PAYOFF START -----------*/
+
+#payoff_container {
+    position: absolute;
+}
+
+#replay_knap {
+    z-index: 7;
+    background-image: url(image/payoff_prov_igen.svg);
+    background-size: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 35vw;
+    height: 8vw;
+    left: 60vw;
+    top: 43vw;
+    cursor: pointer;
+
+}
+
+#brevkasse_knap {
+    z-index: 7;
+    background-image: url(image/payoff_brevkasse.png);
+    background-size: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 22vw;
+    height: 9vw;
+    left: 19.5vw;
+    top: 44.3vw;
+    cursor: pointer;
+
+}
+
+#chat_knap {
+    z-index: 7;
+    background-image: url(image/payoff_chat.png);
+    background-size: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 22vw;
+    height: 9vw;
+    left: 43vw;
+    top: 43.8vw;
+    cursor: pointer;
+
+}
+
+#payoff1 {
+    z-index: 6;
+    background-image: url(image/payoff1-01.png);
+    background-size: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 56.25vw;
+}
+
+
+#payoff2 {
+    z-index: 6;
+    background-image: url(image/payoff2-01.png);
+    background-size: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 56.25vw;
+}
+
+#mrpickle_spritepayoff2 {
+    z-index: 7;
+    width: 10vw;
+    height: 20vw;
+    background-image: url(image/charlie_sprite.svg);
+    background-size: 200%;
+    position: absolute;
+    top: 8vw;
+    left: 45vw;
+}
+
+.mrpickle_kf {
+    z-index: 7;
+    animation-name: mrpickle_happy7;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes mrpickle_happy7 {
+    0% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 200% 100%;
+    }
+
+}

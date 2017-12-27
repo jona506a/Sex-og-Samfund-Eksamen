@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffdbb0;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>mellemgrund</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <rect class="cls-1" width="1600" height="900"/>
+  </g>
+  <g id="Layer_1" data-name="Layer 1">
+    <rect class="cls-2" x="236.09" y="385.25" width="1176.78" height="881.07" transform="translate(1650.27 1.31) rotate(90)"/>
+  </g>
+</svg>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swipe it off ( . Y . )</title>
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="layout.css">
+
+    <!-- FAVIcON START -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <!-- FAVIcON SLUT -->
+    <!-- INDSÆT FONT START -->
+    <!-- INDSÆT FONT SLUT -->
+</head>
+
+<body>
+    <div id="scene">
+
+        <!-- BAGGRUND START -->
+        <div id="background">
+            <!-- Jeg har sat billedet ind i CSS-->
+        </div>
+        <!-- BAGGRUND SLUT -->
+
+        <!-- MELLEMGRUND START -->
+        <div id="mellemgrund">
+            <!-- Jeg har sat billedet ind i CSS-->
+        </div>
+        <div id="billede_container">
+            <div id="passende_sprite"></div>
+            <div id="upassende_sprite"></div>
+        </div>
+        <!-- MELLEMGRUND SLUT -->
+
+        <!-- FORGRUND START -->
+        <div id="forgrund">
+            <!-- Jeg har sat billedet ind i CSS-->
+        </div>
+        <svg version="1.1" viewBox="0 0 1600 900">
+                <symbol id="fade-text">
+                    <text x="53%" y="25%" text-anchor="middle">LEVEL 1</text>
+                </symbol>
+                <g>
+                    <use class="stroke" xlink:href="#fade-text"/>
+                    <use class="fill" xlink:href="#fade-text"/>
+                </g>
+            </svg>
+        <svg version="1.1" viewBox="0 0 1600 900">
+               <symbol id="fade-text_level2" class="invisible">
+                    <text x="53%" y="25%" text-anchor="middle">LEVEL 2</text>
+                </symbol>
+                <g>
+                    <use class="fill" xlink:href="#fade-text_level2"/>
+                    <use class="stroke" xlink:href="#fade-text_level2"/>
+                 </g>
+            </svg>
+        <svg version="1.1" viewBox="0 0 1600 900">
+               <symbol id="fade-text_level3" class="invisible">
+                    <text x="53%" y="25%" text-anchor="middle">LEVEL 3</text>
+                </symbol>
+                <g>
+                    <use class="fill" xlink:href="#fade-text_level3"/>
+                    <use class="stroke" xlink:href="#fade-text_level3"/>
+                 </g>
+</svg>
+        <svg version="1.1" viewBox="0 0 1600 900">
+               <symbol id="fade-text_level4" class="invisible">
+                    <text x="53%" y="25%" text-anchor="middle">LEVEL 4</text>
+                </symbol>
+                <g>
+                    <use class="fill" xlink:href="#fade-text_level4"/>
+                    <use class="stroke" xlink:href="#fade-text_level4"/>
+                 </g>
+</svg>
+        <svg version="1.1" viewBox="0 0 1600 900">
+               <symbol id="fade-text_level5" class="invisible">
+                    <text x="53%" y="25%" text-anchor="middle">LEVEL 5</text>
+                </symbol>
+                <g>
+                    <use class="fill" xlink:href="#fade-text_level5"/>
+                    <use class="stroke" xlink:href="#fade-text_level5"/>
+                 </g>
+</svg>
+
+        <div id="mobile_container"></div>
+        <div id="knap_container">
+            <div id="knap_del"></div>
+            <div id="knap_del_ikke"></div>
+        </div>
+        <div id="mrpickle_container">
+            <div id="mrpickle_sprite"></div>
+        </div>
+
+        <!-- PAYOFF START -->
+
+        <div id="payoff_container">
+            <div id="payoff1"></div>
+            <div id="payoff2"></div>
+            <div id="mrpickle_spritepayoff2"></div>
+
+            <a href="intro.html">
+                <div id="replay_knap"></div>
+            </a>
+            <a href="http://privatsnak.dk/13-15/brevkasse/">
+                <div id="brevkasse"></div>
+            </a>
+            <a href="http://privatsnak.dk/13-15/brevkasse/">
+                <div id="brevkasse"></div>
+            </a>
+        </div>
+
+        <!-- PAYOFF SLUT -->
+
+        <!-- FORGRUND SULT -->
+
+
+
+
+        <!-- AUDIO START -->
+        <audio id="success">
+  <source src="audio/success.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+        <audio id="fail">
+  <source src="audio/fail.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+        <!-- AUDIO SLUT -->
+
+    </div>
+
+    <!--JAVASCRIPT-->
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="Java.js"></script>
+
+    <!--Futura PT-->
+    <script src="https://use.typekit.net/yee7ojz.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
+</body>
+
+</html>
